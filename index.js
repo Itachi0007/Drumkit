@@ -8,7 +8,6 @@
  });
 
  function makeSound(key) {
-  alert("Ahmer loves you Amritha");
    switch (key) {
      case "w":
        var tom1 = new Audio("sounds/tom-1.mp3");
@@ -42,4 +41,5 @@
      default:
        none;
    }
+  alert("Ahmer loves you Amritha");
  }
