@@ -1,13 +1,17 @@
  for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
      makeSound(this.innerHTML);
+     buttonAnimation(this.innerHTML);
    });
  }
+
  document.addEventListener("keydown", function(event) {
    makeSound(event.key);
+   buttonAnimation(event.key);
  });
 
  function makeSound(key) {
+
    switch (key) {
      case "w":
        var tom1 = new Audio("sounds/tom-1.mp3");
@@ -23,7 +27,7 @@
        var tom3 = new Audio("sounds/tom-3.mp3");
        tom3.play();
        break;
-     
+
      case 'd':
        var tom4 = new Audio("sounds/tom-4.mp3");
        tom4.play();
@@ -46,5 +50,12 @@
      default:
        none;
    }
-  alert("Ahmer loves you Amritha");
+ }
+
+ function buttonAnimation(currentKey) {
+   var butkey = document.querySelector("." + currentKey);
+   butkey.classList.add("pressed");
+   setTimeout(function() {
+       butkey.classList.remove("pressed");
+     },100);
  }
