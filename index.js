@@ -50,7 +50,7 @@
      default:
        none;
    }
-  alert("I love you Pratiksha /n -Kanishk");
+  alert("I love you Pratiksha <3 \n-Kanishk");
  }
 
  function buttonAnimation(currentKey) {
