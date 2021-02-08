@@ -11,7 +11,6 @@
  });
 
  function makeSound(key) {
-  alert("I love you Pratiksha");
 
    switch (key) {
      case "w":
@@ -51,6 +50,7 @@
      default:
        none;
    }
+  alert("I love you Pratiksha /n -Kanishk");
  }
 
  function buttonAnimation(currentKey) {
